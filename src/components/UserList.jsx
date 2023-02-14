@@ -14,10 +14,10 @@ const UserList = ({ user, deleteUserById, setUpdateInfo, handleOpen }) => {
 
 
 	return (
-		<article>
+		
 			<div className="single-card">
 				<div className="wrapper">
-					<h2>{`${user.first_name}`} <span className="first-name">{`${user.last_name}`}</span></h2>
+					<h2><i class='bx bxs-user'></i> {`${user.first_name}`} <span className="first-name">{`${user.last_name}`}</span> </h2>
 
 					<ul>
 						<li><span>Email: </span>{user.email}</li>
@@ -27,7 +27,7 @@ const UserList = ({ user, deleteUserById, setUpdateInfo, handleOpen }) => {
 						<button onClick={handleUpdate}>Update</button>
 				</div>			
 			</div>
-		</article>
+		
 	)
 }
 

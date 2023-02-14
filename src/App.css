@@ -73,12 +73,20 @@
 =            Diseño de Tarjetas            =
 ==========================================*/
 
+.userlist {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:wrap;
+}
+
 .single-card {
 	flex-basis:calc(100% / 3);
 	padding:20px;
+
 }
 
-.single-card .wrapper {
+.wrapper {
 	background-color:white;
 	height:100%;
 	padding:30px;
@@ -86,14 +94,19 @@
 	box-shadow:rgba(0,0,0,0.3) 0px 3px 15px;
 	transition:0.4s;
 }
-.single-card .wrapper:hover {
+.wrapper:hover {
 	transform:translateY(-13px);
 }
-.single-card h2 {
+h2 {
 	text-align:center;
 	margin-bottom:28px;
 	font-size: 28px;
 }
 .first-name{
 	color:#5c5470;
+}
+button {
+	width:40px;
+	width:100%;
+	background-color:#202842;
 }

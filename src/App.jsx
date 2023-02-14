@@ -71,7 +71,7 @@ const handleClose = () => setIsOpen(false)
      setUpdateInfo={setUpdateInfo}
      />
      </div>
-     <div>
+     <div className="userlist">
        {
         users?.map(user => (
           <UserList 
