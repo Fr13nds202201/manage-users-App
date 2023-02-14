@@ -58,11 +58,13 @@ const updateUserById = (id, data) => {
   return (
     <div className="App">
      <h1>usuarios</h1>
+     <div className="app__form">
      <UsersForm 
      createNewUser={createNewUser}
      updateInfo={updateInfo}
      updateUserById={updateUserById}
      />
+     </div>
      <div>
        {
         users?.map(user => (

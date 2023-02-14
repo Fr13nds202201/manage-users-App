@@ -1,0 +1,29 @@
+.form {
+	padding:1.2em;
+	width:100%;
+	max-width:350px;
+}
+.form__title{
+	font-size: ;
+}
+.form__item {
+	display: flex;
+	flex-direction: column;
+	gap:0.3em;
+	margin-bottom:0.8em;
+}
+.form__label {
+	color:rgb(54,53, 53);
+	padding-left:1em;
+}
+.form__input {
+	padding:0.4em 0.8em;
+	font-family: inherit;
+}
+.form__btn {
+	width:100%;
+	padding:0.8em;
+	background-color: #555a;
+	color:white;
+	cursor:pointer;
+}
