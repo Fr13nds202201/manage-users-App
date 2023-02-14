@@ -9,6 +9,7 @@ function App() {
  
  const [users, setUsers] = useState()
  const [updateInfo, setUpdateInfo] = useState()
+ const [isOpen, setIsOpen] = useState(false)
 
  console.log(updateInfo)
 
@@ -54,15 +55,20 @@ const updateUserById = (id, data) => {
   .catch(err => console.log(err))
 }
 
+const handleOpen = () => setIsOpen(true)
+const handleClose = () => setIsOpen(false)
 
   return (
     <div className="App">
      <h1>usuarios</h1>
-     <div className="app__form">
+     <button onClick={handleOpen} className="app__btn-form">Formulario</button>
+     <div className={`app__form ${isOpen && 'app__form-visible'}`}>
      <UsersForm 
      createNewUser={createNewUser}
      updateInfo={updateInfo}
      updateUserById={updateUserById}
+     handleClose={handleClose}
+     setUpdateInfo={setUpdateInfo}
      />
      </div>
      <div>
@@ -73,6 +79,7 @@ const updateUserById = (id, data) => {
             user={user}
             deleteUserById={deleteUserById}
             setUpdateInfo={setUpdateInfo}
+            handleOpen={handleOpen}
             
           />
           ))
