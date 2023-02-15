@@ -23,8 +23,10 @@ const UserList = ({ user, deleteUserById, setUpdateInfo, handleOpen }) => {
 						<li><span>Email: </span>{user.email}</li>
 						<li><span>Birthday: </span>{user.birthday}</li>
 					</ul>
+					<div className="btn">
 						<button onClick={handleDelete}>Delete</button>
 						<button onClick={handleUpdate}>Update</button>
+					</div>
 				</div>			
 			</div>
 		
